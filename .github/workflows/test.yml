@@ -11,4 +11,6 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Create branch & push
-        run: git branch mctest | git push origin mctest
+        run: git branch mctest |
+          git remote -v |
+          git push origin mctest 
