@@ -9,6 +9,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Create McBranch
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           #git branch mctest |
           git remote -v |
