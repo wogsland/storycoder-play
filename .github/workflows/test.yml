@@ -11,12 +11,12 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Create Branch
-        uses: peterjgrainger/action-create-branch@v2.2.0
+        uses: peterjgrainger/action-create-branch@v2.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: 'mctest'
           sha: '${{ github.event.pull_request.head.sha }}'
-        #run: git branch mctest |
-        #  git remote -v |
-        #  git push origin mctest 
+          #run: git branch mctest |
+          #  git remote -v |
+          #  git push origin mctest 
