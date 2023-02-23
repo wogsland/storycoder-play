@@ -16,7 +16,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: 'mctest'
-          #sha: '${{ github.event.workflow_dispatch.head.sha }}'
+          sha: '${{ github.event.workflow_dispatch.head.sha }}'
           #run: git branch mctest |
           #  git remote -v |
           #  git push origin mctest 
