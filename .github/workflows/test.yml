@@ -15,6 +15,6 @@ jobs:
         env:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          #git branch mctest |
+          git branch mctest |
           git remote -v |
-          #git push origin mctest 
+          git push origin mctest 
